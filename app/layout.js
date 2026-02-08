@@ -1,16 +1,14 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Next.js MongoDB Template',
-  description: 'A simple template with App Router, MongoDB, and shadcn/ui',
+  title: 'OCHI - Presentation Design Agency',
+  description: 'We create eye-opening presentations for forward-thinking businesses',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   )
 }
