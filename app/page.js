@@ -158,8 +158,8 @@ function Navbar() {
         </div>
 
         {/* Contact Button (Desktop) / Hamburger (Mobile) */}
-        <div className="flex items-center">
-          <a href="#" className="hidden lg:block text-sm text-ochi-zinc link-underline cursor-pointer">
+        <div className="flex items-center gap-4">
+          <a href="#" className="text-sm text-ochi-zinc link-underline cursor-pointer hidden md:block">
             Contact us
           </a>
           
