@@ -33,30 +33,6 @@ body {
   font-family: 'Bebas Neue', 'Founders Grotesk', sans-serif;
 }
 
-/* Marquee Animation */
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-marquee {
-  animation: marquee 20s linear infinite;
-}
-
-/* Loading animation */
-@keyframes loadingProgress {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 /* Underline animation */
 .link-underline {
   position: relative;
@@ -93,75 +69,4 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--ochi-zinc);
   border-radius: 4px;
-}
-
-/* Button styles */
-.btn-rounded {
-  border-radius: 50px;
-  padding: 8px 20px;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-
-.btn-rounded:hover {
-  background-color: var(--ochi-zinc);
-  color: var(--ochi-cream);
-}
-
-/* Section rounded corners */
-.section-rounded::before,
-.section-rounded::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  background: inherit;
-}
-
-.section-rounded::before {
-  bottom: 100%;
-  border-radius: 0 0 50% 50% / 0 0 100% 100%;
-  margin-bottom: -1px;
-}
-
-.section-rounded::after {
-  top: 100%;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  margin-top: -1px;
-}
-
-@layer base {
-  :root {
-    --background: 0 0% 96%;
-    --foreground: 0 0% 13%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 13%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 13%;
-    --primary: 168 100% 15%;
-    --primary-foreground: 0 0% 96%;
-    --secondary: 70 70% 66%;
-    --secondary-foreground: 0 0% 13%;
-    --muted: 0 0% 90%;
-    --muted-foreground: 0 0% 40%;
-    --accent: 70 70% 66%;
-    --accent-foreground: 0 0% 13%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 96%;
-    --border: 0 0% 85%;
-    --input: 0 0% 85%;
-    --ring: 168 100% 15%;
-    --radius: 0.5rem;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
